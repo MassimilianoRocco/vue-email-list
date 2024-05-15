@@ -9,6 +9,7 @@ createApp({
             codiceRisposta:"",
             datiRisposta:"",
             inputUtente:"",
+            showLi:false,
         }
     },
     methods: {
@@ -44,7 +45,14 @@ createApp({
                     }
                 }
         
-       }
+       },
+
+       showElem(i){
+        if(i==this.listaMail.length){
+            return "d-block"
+        }
+        
+       },
     },
     mounted() {
 

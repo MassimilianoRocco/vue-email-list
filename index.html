@@ -15,8 +15,8 @@
             <input type="number" v-model="inputUtente" placeholder="Inserire un numero">
             <button @click="addMails(inputUtente)">Genera</button>
         </div>
-        <ul v-for="indirizzo,index of listaMail">
-            <li>{{indirizzo}}</li>
+        <ul v-for="indirizzo,index of listaMail" :class="showElem(inputUtente)">
+            <li>{{indirizzo}} {{"lunghezza lista= "+listaMail.length + "Indice: " + index}}</li>
         </ul>
     </div>
 

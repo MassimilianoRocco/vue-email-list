@@ -3,3 +3,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.d-block{
+    display: block;
+}
+
+ul{
+    display: none;
+}
