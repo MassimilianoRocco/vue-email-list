@@ -16,7 +16,7 @@
             <button @click="addMails(inputUtente)">Genera</button>
         </div>
         <ul v-for="indirizzo,index of listaMail" :class="showElem(inputUtente)">
-            <li>{{indirizzo}} {{"lunghezza lista= "+listaMail.length + "Indice: " + index}}</li>
+            <li>{{indirizzo}}</li>
         </ul>
     </div>
 
