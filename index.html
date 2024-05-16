@@ -15,7 +15,7 @@
             <input type="number" v-model="inputUtente" placeholder="Inserire un numero">
             <button @click="addMails(inputUtente)">Genera</button>
         </div>
-        <ul v-for="indirizzo,index of listaMail" :class="showElem(inputUtente)">
+        <ul v-for="indirizzo,index of listaMail" :class="showElem()">
             <li>{{indirizzo}}</li>
         </ul>
     </div>
@@ -24,3 +24,7 @@
     <script src="./js/main.js"></script>
 </body>
 </html>
+
+
+
+<!-- Si potrebbe tranquillamente usare il v-if sul <li> -->

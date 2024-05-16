@@ -9,11 +9,10 @@ createApp({
             codiceRisposta:"",
             datiRisposta:"",
             inputUtente:"",
-            showLi:false,
         }
     },
     methods: {
-       addMails(input){
+    addMails(input){
         
         if(this.listaMail != null){
             this.listaMail = [];
@@ -27,8 +26,8 @@ createApp({
                     console.log("Ricevuta risposta", codiceRisposta, datiRisposta);
         
                     this.listaMail.push(datiRisposta.response);     
-                    });
-                }
+                });
+            }
         }
 
             else{
@@ -41,18 +40,17 @@ createApp({
                         console.log("Ricevuta risposta", codiceRisposta, datiRisposta);
             
                         this.listaMail.push(datiRisposta.response);     
-                        });
-                    }
+                    });
                 }
-        
-       },
+            }
+        },
 
-       showElem(i){
-        if(i==this.listaMail.length){
+    showElem(){
+        if(this.inputUtente==this.listaMail.length){
             return "d-block"
         }
         
-       },
+    },
     },
     mounted() {
 
